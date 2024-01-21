@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+*{
+     margin: 0; 
+     padding: 0; 
+}
+.preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	animation: spinz 1.35s linear infinite;
+	width: 100%;
+	height: 100%;
+	background-color: #ffffff;
+	background-color: #F6FBFD;   
+    background-repeat: no-repeat;
+	z-index: 100;
+  }
+  
+  .loader {
+	border: 16px solid #efeee8;
+	border-top: 16px solid #4ab8f8;  
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+	animation: spin 1.35s linear infinite;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -60px;
+	margin-left: -60px;
+  }
+
+  @keyframes spin {
+	0% {
+	  transform: rotate(0deg);
+	  opacity:1;
+	}
+	50% {
+	  transform: rotate(360deg);
+	  opacity:1;
+	}
+	75% {
+	  opacity:1;
+	  transform: rotate(180deg);
+	}
+	100% {
+	  transform: rotate(0deg);
+	  opacity:0;
+	}
+  }
+  
+  @keyframes spinz {
+	0% {
+	  opacity:1;
+	}
+	50% {
+	  opacity:1;
+	}
+	75% {
+	  opacity:1;
+	}
+	100% {
+	  opacity:0;
+	}
+  }
+
+body{
+    background-color: #f5f6f7;
+}
+header{
+    text-align: center;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    width: 100%;
+    border-radius: 5px;
+}
+#logo{
+
+    width: 450px;
+}
+.container{
+    background-image: url(../img/1323348.jpg);
+    background-repeat: no-repeat;
+    border-radius: 1.5rem;
+    width: 800px;
+    margin: 0 auto;
+}
+.main-container{
+   display: flex;
+   margin-top: 1rem;
+   justify-content: center;
+
+}
+#defante{
+    width: 280px;
+    height: 280px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#defante:hover{
+    transform: rotate(360deg);
+
+}
+.text{
+    text-transform: uppercase;
+    font-style: italic;
+    font-family: 'Lemon', serif;
+    padding-top:2rem ;
+    margin: 1rem;
+}
+.text h1{
+    font-size: 40px;
+}
+.text p{
+    font-size: 25px;
+    line-height: 2.5rem;
+}
+.rede-social ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+.rede-social li{
+    margin: 1.50rem;
+    padding: 0.50rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.rede-social li:hover{
+    transform: translateY(-7px)
+}
+.sobre{
+    background-image: url(../img/1323348.jpg);
+    background-repeat: no-repeat;
+    border-radius: 1.5rem;
+    font-family: 'Lemon', serif;
+    text-align: center;
+    width: 800px;
+    height: 150px;
+    margin: 0 auto;
+    padding: 0.40rem;
+}
+.sobre h2{
+    font-size: 30px;
+}
+.sobre p{
+    line-height: 2rem;
+}
+#video h3{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Lemon', serif;
+    font-size: 25px;
+    padding: 1rem;
+}
+#video{
+    text-align: center;
+    cursor: pointer;
+}
+#video video{
+    width: 800px;
+    margin-top: 1rem;
+    border-radius: 1.5rem;
+
+}
+.galeria{
+  width: 50rem;
+  height: 29rem;
+  position: relative;
+  display: flex;
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+.galeria img{
+  width: 100%;
+  height: 100%;
+  position: sticky;
+  left: 0;
+  flex-shrink: 0;
+  object-fit: cover;
+  scroll-behavior:smooth;
+  border-radius: 1.5rem;
+}
+
+
+
+#comentario{
+    text-align: center;
+    margin-top: 1rem;
+}
+#comentario img{
+    width: 800px;
+    padding: 1rem;
+    border-radius: 1rem;
+   
+}
+#botao{
+    width: 100%;
+    height: 65px;
+    text-align: center;
+}
+.btn{
+    height: 50px;
+    width: 180px;
+    font-family: 'Lemon', serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.5s;
+    border: none;
+    border-radius:1rem ;
+    background-color: darkgrey;
+}
+.btn:hover{
+    background-color: rgb(185, 185, 185);
+}
+
+@media(max-width:800px){
+
+    .loader{
+        width: 80px;
+        height: 80px;
+    }
+
+    header{
+        height: 180px;
+    }
+    #logo{
+        width: 350px;
+        padding-top: 1rem;
+    }
+    .container{
+        width: 750px;
+    }
+    #defante{
+        width: 230px;
+        height: 230px;
+    }
+    .text{
+        padding-top: 0;
+    }
+    .text h1{
+        font-size: 30px;
+    }
+    .text p{
+        font-size: 25px;
+        line-height: 3rem;
+    }
+    .rede-social img{
+        width: 58px;
+        height: 58px;
+    }
+    .sobre{
+        width: 750px;
+        height: 130px;
+    }
+    .sobre h2{
+        font-size: 27px;
+    }
+    .sobre p{
+      font-size: 15px;
+    }
+    #video video{
+        width: 750px;
+    }
+    .galeria{
+      width: 45rem;
+      height: 30rem;
+    }
+    #comentario img{
+        width: 750px;
+    }
+}
+@media(max-width:700px){
+    .loader{
+        width: 60px;
+        height: 60px;
+    }
+  .container{
+    width: 600px;
+  }
+  #defante{
+    width: 200px;
+    height: 200px;
+    padding-top: 0.50rem;
+  }
+  .text{
+    padding-top: 1rem;
+  }
+  .text h1{
+    font-size: 25px;
+  }
+  .text p{
+    font-size: 20px;
+    line-height: 2.3rem;
+  }
+  .rede-social img{
+    width: 50px;
+    height: 50px;
+  }
+  .sobre{
+    width: 650px;
+    height: 110px;
+  }
+  .sobre h2{
+    font-size: 25px;
+  }
+  .sobre p{
+    font-size: 13px;
+    line-height: 1.8rem;
+  }
+  #video h3{
+    font-size: 25px;
+    padding-bottom: 0.50rem;
+  }
+  #video video{
+    width: 650px;
+    padding-bottom: 0.50rem;
+  }
+  .galeria{
+    width: 40rem;
+    height: 28rem;
+  }
+  #comentario img{
+    width: 650px;
+  }
+
+}
+@media(max-width:600px){
+    .loader{
+        width: 45px;
+        height: 45px;
+    }
+    .container{
+        width: 500px;
+    }
+    #defante{
+        width: 180px;
+        height: 180px;
+    }
+    .text h1{
+        font-size: 23px;
+    }
+    .text p{
+        font-size: 18px;
+    }
+    .rede-social img{
+        width: 48px;
+        height: 48px;
+    }
+    .sobre{
+        width: 500px;
+    }
+    .sobre h2{
+        font-size: 23px;
+    }
+    .sobre p{
+        font-size: 12px;
+        line-height: 1.1rem;
+    }
+    #video video{
+        width: 500px;
+    }
+    .galeria{
+      width: 31rem;
+      height: 25rem;
+    }
+    #comentario img{
+        width: 500px;
+    }
+}
+
+@media(max-width:500px){
+  header{
+    height: 150px;
+  }
+  #logo{
+    width: 300px;
+  }
+  .container{
+    width: 475px;
+  }
+  .sobre{
+    width: 475px;
+  }
+  .galeria{
+    width: 30rem;
+    height: 23rem;
+  }
+  #video video{
+    width: 475px;
+  }
+  #comentario img{
+    width: 475px;
+  }
+}
+@media(max-width:400px){
+  header{
+    height: 130px;
+  }
+  #logo{
+    width: 250px;
+  }
+  .container{
+    width: 390px;
+
+  }
+  #defante{
+    width: 180px;
+    height: 180px;
+  }
+  .text{
+    margin-top: 1.3rem;
+  }
+  .text h1{
+    font-size: 20px;
+  }
+  .text p{
+    font-size: 15px;
+    line-height: 1.8rem;
+  }
+  .rede-social img{
+    width: 45px;
+    height: 45px;
+  }
+  .sobre{
+    width: 380px;
+  }
+  .sobre h2{
+    font-size: 20px;
+  }
+  #video h3{
+    font-size: 23px;
+  }
+  #video video{
+    width: 390px;
+  }
+  .galeria{
+    width: 23rem;
+    height: 20rem;
+
+  }
+  #comentario img{
+    width: 370px;
+  }
+}
